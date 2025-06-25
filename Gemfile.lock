@@ -317,6 +317,7 @@ PLATFORMS
   aarch64-linux
   aarch64-linux-gnu
   aarch64-linux-musl
+  arm-linux
   arm-linux-gnu
   arm-linux-musl
   arm64-darwin
@@ -332,7 +333,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
-  litestack
+  litestack (~> 0.4.4)
   puma (>= 5.0)
   rails (~> 7.2.0)
   rubocop-rails-omakase
