@@ -74,10 +74,12 @@ volumes:
 # hitting 404 on in-flight requests. Combines all files from new and old
 # version inside the asset_path.
 asset_path: /rails/public/assets
+deploy_timeout: 60
 
 # Configure the image builder.
 builder:
   arch: amd64
+  context: .
 
   # # Build image via remote server (useful for faster amd64 builds on arm64 computers)
   # remote: ssh://docker@docker-builder-server
