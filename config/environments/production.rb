@@ -95,7 +95,8 @@ Rails.application.configure do
     "localhost",
     "0.0.0.0",
     "164.90.199.170",
-    /.*/
+    "app.salimodv.org",
+    /.*/,
   ]
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
