@@ -35,7 +35,7 @@ registry:
 env:
   secret:
     - RAILS_MASTER_KEY
-    - DATABASE_URL
+    # - DATABASE_URL
     # - RAILS_MASTER_KEY
   clear:
     # Run the Solid Queue Supervisor inside the web server's Puma process to do jobs.
@@ -43,7 +43,7 @@ env:
     SOLID_QUEUE_IN_PUMA: true
     THRUSTER_MAX_THREADS: "5"
     RAILS_ENV: production
-    PORT: 80
+    PORT: 3000
 
     # Set number of processes dedicated to Solid Queue (default: 1)
     # JOB_CONCURRENCY: 3
