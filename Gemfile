@@ -18,6 +18,8 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 gem 'google-api-client'
+gem 'google-cloud-logging'
+gem "stackdriver"
 gem 'googleauth'
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]

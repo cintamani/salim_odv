@@ -39,7 +39,11 @@ Rails.application.configure do
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
+  config.google_cloud.project_id = "app-salim-odv"
+  config.google_cloud.credentials = Rails.application.credentials.google_service_account
 
+  config.google_cloud.logging.project_id = "app-salim-odv"
+  config.google_cloud.logging.keyfile    = Rails.application.credentials.google_service_account
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
   # config.action_cable.url = "wss://example.com/cable"

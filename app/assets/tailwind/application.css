@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+/* Tell Tailwind exactly where to find your classes */
+@source "../../views/**/*.html.erb";
+@source "../../views/**/*.html.haml";
+@source "../../helpers/**/*.rb";
+@source "../../components/**/*.{rb,erb,haml}";
+@source "../javascript/**/*.{js,jsx}";
